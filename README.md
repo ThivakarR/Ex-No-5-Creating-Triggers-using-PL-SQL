@@ -39,7 +39,7 @@ CREATE TABLE sal_log (
 
 
 ### PLSQL Trigger code
-```
+```sql
 ->Create the trigger
 Create the trigger
 CREATE OR REPLACE TRIGGER log_sal_update
@@ -52,7 +52,9 @@ BEGIN
   END IF;
 END;
 /
+```
 ->Update the salary of an employee
+```sql
 UPDATE employed
 SET salary = 60000
 WHERE empid = 1;
